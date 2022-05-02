@@ -20,7 +20,7 @@
       </el-form-item>
 
       <el-form-item>
-          <el-button class="login-btn" @click="resetForm">重置</el-button>
+          <el-button class="login-btn" >重置</el-button>
         <el-button type="primary" plain class="login-btn" @click="dologin">登录</el-button>
         
       </el-form-item>
@@ -66,10 +66,6 @@ export default {
         console.log('是否登录成功:',res)
         this.$router.push("/home")
       });
-    },
-    // 表单重置
-    resetForm(){
-      this.$refs.login.resetFields()
     }
   }
 };
